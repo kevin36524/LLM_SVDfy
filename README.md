@@ -18,9 +18,9 @@ This repository contains code for replacing attention and MLP layers in Large La
 ## Encountered Issues
 
 During training on a GCP VM with an A100 GPU, we encountered a `torch.cuda.OutOfMemoryError`.
-Use code with caution.
-Markdown
+```
 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU
+```
 This error indicates that the GPU memory is insufficient for the training process. Potential solutions include:
 
 * **Reducing batch size:** Smaller batches require less memory.
